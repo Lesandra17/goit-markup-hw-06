@@ -45,17 +45,36 @@ a{
 img {
     display: block;
 }
+/* Mobile */
 .container {
-    width: 1158px;
+    min-width: 320px;
+    max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-   
+    padding-right: 16px;
+    padding-left: 16px;
+    outline: 2px solid red; 
 
-    
 }
 
+/* Tablet screen */
+@media screen and( min-width: 768px) {
+.container {
+max-width: 768px;
+}
+    
+}
+/* Desktop screen */
+@media  screen and(min-width: 1158px) {
+.container {
+max-width: 1440;
+
+}
+}
+/* width: 1158px;
+   
+    padding-left: 15px;
+    padding-right: 15px; */
 
 /* Header */
 
