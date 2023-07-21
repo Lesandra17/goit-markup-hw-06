@@ -68,6 +68,91 @@
           </svg>
         </button>
       </div>
+      <!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link accent-button" href="">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="mobile-contacts">
+            <li>
+              <a class="contacts-mobile-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="contacts-mobile-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="soc-mobile-list">
+            <li class="soc-mobile-item">
+              <a class="mobile-soc-link" href="" aria-label="instagram">
+                <svg class="icon-soc-mobile" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-mobile-item">
+              <a class="mobile-soc-link" href="" aria-label="twitter">
+                <svg class="icon-soc-mobile" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-mobile-item">
+              <a class="mobile-soc-link" href="" aria-label="facebook">
+                <svg class="icon-soc-mobile" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-mobile-item">
+              <a class="mobile-soc-link" href="" aria-label="linkedin">
+                <svg class="icon-soc-mobile" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="js/mobile-menu.js"></script>
+      <script src="./js/modal.js"></script>
     </header>
 
     <!-- Main block -->
@@ -604,86 +689,5 @@
         </form>
       </div>
     </div>
-    <!-- Mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link accent-button" href="">Studio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="">Portfolio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="">Contacts</a>
-        </li>
-      </ul>
-      <ul class="mobile-contacts">
-        <li>
-          <a class="contacts-mobile-tel link" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li>
-          <a class="contacts-mobile-mail link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-
-      <ul class="soc-mobile-list">
-        <li class="soc-mobile-item">
-          <a class="mobile-soc-link" href="" aria-label="instagram">
-            <svg class="icon-soc-mobile" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="soc-mobile-item">
-          <a class="mobile-soc-link" href="" aria-label="twitter">
-            <svg class="icon-soc-mobile" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="soc-mobile-item">
-          <a class="mobile-soc-link" href="" aria-label="facebook">
-            <svg class="icon-soc-mobile" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="soc-mobile-item">
-          <a class="mobile-soc-link" href="" aria-label="linkedin">
-            <svg class="icon-soc-mobile" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
