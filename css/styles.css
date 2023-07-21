@@ -58,14 +58,15 @@ img {
 }
 
 /* Tablet screen */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768) {
 .container {
 max-width: 768px;
+
 }
     
 }
 /* Desktop screen */
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 .container {
 max-width: 1158px;
 
@@ -86,9 +87,10 @@ max-width: 1158px;
 } 
  
  .header-container {
-     display: flex;
+
+     /* display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: space-between; */
  }
 
  .header-nav {
@@ -129,6 +131,20 @@ max-width: 1158px;
      flex-wrap: wrap;
      align-items: center;
      gap: 40px;
+ }
+ @media only screen and (max-width: 767px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25.5px;
+        padding-bottom: 23.5px;
+    }
+.list-header-list {
+    display: none;
+}
+.menu-toggle-icon{
+    stroke: #2E2F42;
+}
  }
 
  .header-list.link {
@@ -192,6 +208,11 @@ max-width: 1158px;
      padding-top: 24px;
      padding-bottom: 24px;
      gap: 40px;
+ }
+ @media only screen and (max-width: 767px) {
+    .list-contacts {
+         display: none;
+     }
  }
 
  .contacts-list.link {
@@ -265,23 +286,11 @@ max-width: 1158px;
 
 .primary-benefits {
     padding-top: 96px;
-    padding-bottom: 96px
+    padding-bottom: 96px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
  
- 
-
-@media only screen and (min-width: 768px) {
-   .primary-benefits {
-   padding: 96px 5px ;
-   }
-}
-@media screen and (min-width: 1158px) {
-.primary-benefits {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-}
-
 .visually-hidden{
    position: absolute;
    width: 1px;
@@ -294,29 +303,85 @@ max-width: 1158px;
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
-.benefits-list {
-    margin: 0 auto;
+
+/* display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 72px; */
+   
+
+/* .benefits-item {
+
+} */
+
+@media only screen  and ( max-width: 767px) {
+.benefits-item:not(:last-child)
+{
+margin-bottom: 72px;
+}   
 }
 
+.benefits-icon {
+    display: none;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--light-grey-color);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;}
 
-@media only screen and (min-width: 768px){
+   .benefits-title {
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    text-align: center;
+   }
+   .benefits-title
+
+       
+    .benefits-text {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--secondary-color);
+        }
+
+
+@media only screen and (min-width: 768px) {
+    .primary-benefits {
+        padding: 96px 0;
+    }
+
+
 .benefits-list {
 display: flex;
 flex-wrap: wrap;
 row-gap: 72px;
-    column-gap: 24px;
-}
-}
-@media only screen and (min-width: 1158px) {
-.benefits-list{  
+column-gap: 24px;
 
+}
+.benefits-item {
+    margin-bottom: 0;
+   flex-basis: calc((100% - 24px) / 2);
+   align-items: flex-start;
+}
+}
+
+
+
+
+@media screen and (min-width: 1158px) {
+    .primary-benefits {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+.benefits-list{  
         display: flex;
         gap: 24px;
-        
     }
-}
-
-@media only screen and (min-width: 1158px) {
+ 
     .benefits-icon {
         display: flex;
         width: 264px;
@@ -326,48 +391,28 @@ row-gap: 72px;
         justify-content: center;
         align-items: center;
         margin-bottom: 8px;
-        
     }
-}
-.benefits-item {
-
-}
-
-@media only screen and (min-width: 768px) {
-.benefits-item {
-    margin-bottom: 0;
-flex-basis: calc((100%-24px)/2);
-}
-}
-
-
-@media only screen and (min-width: 1158px) {
 .benefits-item {
     flex-direction: column;
     align-items: flex-start;
     width: calc((100% - 3 * 24px) / 4);
-          
-}    
-}
+    }    
 .benefits-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-color);
-    margin-bottom: 8px;
-    
-     
-}
+    margin-bottom: 8px;     
+    }
 .benefits-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
     width: 264px;
-    height: 72px;
- 
-   
+    height: 72px;   
+    }
 }
 
 /* made */
