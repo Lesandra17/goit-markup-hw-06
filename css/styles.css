@@ -1151,14 +1151,17 @@ color: #2E2F42;
     color: #4D5AE5;
 }
 .mobile-contacts {
-
+display: flex;
+flex-direction: column;
+gap: 40px;
 }
 .soc-mobile-list {
 display: flex;
-gap: 56px
+gap: 56px;
+margin-top: 48px;
 }
 .soc-mobile-item {
-
+display: flex;
 }
 .mobile-soc-link {
     width: 40px;
